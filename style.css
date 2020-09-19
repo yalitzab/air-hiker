@@ -1,114 +1,9 @@
-
-/* body {
-  background-color: rgba(196, 196, 196, 0.26);
-} */
-
-/* body {
-  color: linear-gradient(#084488 @ 0%, #377BA3 @ 37.5%, #6AA1AA @ 93.75%);
-} */
-
-
-
-
 body {
+  max-width: 1360;
   font-family: Montserrat;
   font-style: normal;
   background: rgb(8,68,136);
 background: linear-gradient(174deg, rgba(8,68,136,1) 0%, rgba(55,123,163,1) 35%, rgba(106,161,170,1) 94%);
-}
-
-.container {
-  display: flex 1 100%;
-  flex-wrap: wrap;
-  padding: 5px;
-}
-
-#trail {
-  display: flex 1 ;        /* Flex layout so items have equal height  */
-  flex-flow: row wrap;  /* Allow items to wrap into multiple lines */
-}
-
-.trail-item {
-  display: flex 1;        /* Lay out each item using flex layout */
-  flex-flow: column;    /* Lay out item’s contents vertically  */
-border-radius: 10px;
-margin-top: 20px;
-margin-bottom: 20px;
-margin-right: 50px;
-margin-left: 80px;
-}
-
-.trail-item > image {
-  order: -1;            /* Shift image before other content (in visual order) */
-  align-self: center;   /* Center the image cross-wise (horizontally)         */
-}
-
-/* Rectangle 13 - background */
-
-/* 500 trails */
-
-.trail-title{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-color: #000000;
-margin-top: 20px;
-margin-bottom: 20px;
-margin-right: 50px;
-margin-left: 80px;
-}
-
-
-.trails {
-  width: 0;
-  margin: 0 auto 0px auto;
-  background: #024e76;
-  color: #fce138;
-  text-align: center;
-    }
-
-/* .trail img {
-  width: 35%;
-    } */
-    
-/* .trail-text {
-    padding: 35px;
-      float: left;
-      width: 65%;
-    } */
-
-.trail-text h3 {
-  font-size: 20px;
-  margin-bottom: 0;
-    }
-    
-.trail-text h4 {
-  font-weight: lighter;
-  font-size: 15px;
-  margin-bottom: 25px;
-    }
-    
-.trail-text p {
-  font-size: 12px;
-  line-height: 1.3;
-    }
-
-/* airnow reference_widget */
-
-
-.widget {
-position: 0;
-width: 0;
-height: 0px;
-left: 0px;
-top: 0px;
-border-radius: 10px;
-margin-top: 20px;
-margin-bottom: 20px;
-margin-right: 50px;
-margin-left: 1000px;
 }
 
 /* 500 trails */
@@ -125,18 +20,39 @@ margin-left: 1000px;
   color:white;
 }
 
-h4 {
-color: white;
-} */
-
 /* Lands End Trail San Francisco, California */
 
 h1 {
-  color:white
+  color:white;
+  margin-bottom: 0px;
+
   }
 
 h2 {
-color:white
+color:white;
+margin-bottom: 0px;
+
+}
+
+h3 {
+  color:white;
+  margin-bottom: 0px;
+
+  }
+  
+h4 {
+  color: white;
+  margin-bottom: 0px;
+  }
+
+h5 {
+    color: white;
+    margin-bottom: 0px;
+   } 
+  
+
+.flow-text {
+  color:white;
 }
 
 /* moderate-btn1 */
@@ -157,12 +73,24 @@ color:white
   border-radius: 10px;
 }
 
+.button-result {
+  position: auto;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 10px;}
+
 /* IMG_5D26EE8144D0-1 1 */
 
-.image {
-position: relative;
-width: 100%;
-height: 100%;
+.landsend {
+position: auto;
+width: 960px;
+height: 310px;
 left: 0;
 top: 0;
 border-radius: 10px;
@@ -170,8 +98,8 @@ border-radius: 10px;
 
 .column {
   float: left;
-  width: 35%;
-  padding: 5px;
+  width: auto;
+  padding: 20px;
 }
 
 /* Clear floats after image containers */
@@ -179,4 +107,222 @@ border-radius: 10px;
   content: "";
   clear: both;
   display: table;
+}
+
+.c-footer-contact__text {
+  max-width: 1360px;
+  margin: 0 0 87px;
+  font-size: 20px;
+  line-height: 1;
+  margin-left: 10px;
+  padding-right: 24px;
+  padding-top: 5px;
+  padding-bottom: 200px;
+  color: black;
+}
+
+.footer-signup__form {
+  max-width: 1360px;
+    color: #000;
+    margin-bottom: 100px;
+
+}
+
+.footer-signup__form-fields {
+  max-width: 1360px;
+  margin-bottom: 32px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-signup__phone {
+  position: relative;
+  width: calc(70% - 24px);
+  color:#000000;
+}
+
+.c-footer__content {
+  background: rgb(215,227,229);
+  position: auto;
+  margin-top: 10px;
+}
+
+.btn__arrow {
+  background:#5DC8F9;
+  border-radius: 30px;
+}
+
+.footer-signup__submit {
+  border-radius: 30px;
+  background:#5DC8F9;
+}
+
+/* ken css  */
+
+.button-container{
+  position:auto;
+  background-color: #D7E3E5;
+  height: 600px;
+  width: 567px;
+  padding: 50px;
+  margin: 20px;
+  border: 1px solid green;
+}
+
+.btn1
+{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    height: 75px;
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /*border: 2px solid black;*/
+}
+
+.btn2{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 280px;
+    height: 75px;
+    width: 150px;
+
+
+}
+
+.btn3{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 430px;
+    height: 75px;
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.btn4{
+    position: absolute;
+    height: 75px;
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 380px;
+    left: 130px;
+}
+
+.btn5
+
+{
+    background-color:#ffffff;
+    position: absolute;
+    top: 380px;
+    left: 280px;
+    height: 75px;
+    width: 150px;
+
+
+}
+
+.btn6{
+    background-color:#ffffff;
+    position: absolute;
+    top: 380px;
+    left: 430px;
+    height: 75px;
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.sort{
+    position: absolute;
+    top: 60px;
+    left: 130px;   
+}
+
+.difficulty{
+    position: absolute;
+    top: 320px;
+    left: 130px; 
+}
+
+h3{
+    font-size: 20px
+}
+
+.flex-container{
+    display: flex;
+}
+
+.slider{
+    position: absolute;
+    width: 450px;
+    top: 600px;
+    left: 130px;
+
+}
+
+.range-control{
+    position: absolute;
+    top: 540px;
+    left: 135px;  
+}
+
+h4{
+    position: absolute;
+    top: 550px;
+    left: 430px;  
+}
+
+.value{
+    position: absolute;
+    top: 610px;
+    left: 135px;  
+
+}
+
+/* alltrail */
+
+#page-home-index .container {
+  max-width: 1360px;
+}
+
+#page-home-index #marketing-features .search-form, #page-pro-welcome #marketing-features .search-form {
+  text-align: center;
+}
+
+#page-home-index .visual .search-form-block .search-form {
+  max-width: 712px;
+  text-align: left;
+}
+
+#page-home-index .visual .search-form-block .search-form {
+  max-width: 1360px;
+}
+
+#page-home-index .visual .search-form-block .search-form  {
+  max-width: 350px;
+  margin: 20 auto;
+}
+
+#page-home-index #marketing-features .search-form .inputs-holder-border, #page-pro-welcome #marketing-features .search-form .inputs-holder-border  
+{
+  z-index: -2;
+  position: absolute;
+  height: 97px;
+  width: 742px;
+  margin-top: -15px;
+  margin-left: -15px;
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 6px rgba(65,65,65,0.4);
+  box-shadow: 0 0 6px rgba(65,65,65,0.4);
+
 }
