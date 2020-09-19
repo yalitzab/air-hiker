@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Hiker</title>
+
 </head>
 <body>
-    
+  
+<div class="button-container flex-container"> 
+
+  <span class="top-button-container">
+    <h2 class="sort">Sort</h2> 
+    <button class="btn1" id="button1"><h3>Best Match</h3></button>
+    <button class="btn2" id="button2"><h3>Most Popular</h3></button>
+    <button class="btn3" id="button3"><h3>Closest<h3></button>
+    <h2 class="difficulty">Difficulty</h2>
+   <button class="btn4" id="button4"><h3>Easy</h3></button>
+   <button class="btn5" id="button5"><h3>Moderate</h3></button>
+   <button class="btn6" id="button6"><h3>Hard</h3></button>
+   <h2 class="range-control">Length</h2>
+   <h4>0 miles to 100 + miles</h4>
+   <p class="value">Value: <span id="demo"></span></p>
+   <input type="range" min="1" max="100" value="0" class="slider" id="myRange" name="myRange">
+   <output for="MyRange" onforminput="value = myRange.valueAsNumber;"></output> 
+  </span>
+  </div>
+
+</body>
+
+
+<script src=.\assets\js\button-container.js></script>
+<link rel="stylesheet" href="./assets/css/style.css">
 </body>
 </html>

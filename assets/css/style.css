@@ -1,0 +1,127 @@
+
+.button-container{
+  background-color: #D7E3E5;
+  height: 600px;
+  width: 567px;
+  padding: 50px;
+  margin: 20px;
+  border: 1px solid green;
+}
+
+.btn1
+{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    height: 75px;
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /*border: 2px solid black;*/
+}
+
+.btn2{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 280px;
+    height: 75px;
+    width: 150px;
+   
+
+}
+
+.btn3{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 430px;
+    height: 75px;
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.btn4{
+    position: absolute;
+    height: 75px;
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 380px;
+    left: 130px;
+}
+
+.btn5
+
+{
+    background-color:#ffffff;
+    position: absolute;
+    top: 380px;
+    left: 280px;
+    height: 75px;
+    width: 150px;
+   
+
+}
+
+.btn6{
+    background-color:#ffffff;
+    position: absolute;
+    top: 380px;
+    left: 430px;
+    height: 75px;
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.sort{
+    position: absolute;
+    top: 60px;
+    left: 130px;   
+}
+
+.difficulty{
+    position: absolute;
+    top: 320px;
+    left: 130px; 
+}
+
+h3{
+    font-size: 20px
+}
+
+.flex-container{
+    display: flex;
+}
+
+.slider{
+    position: absolute;
+    width: 450px;
+    top: 600px;
+    left: 130px;
+        
+}
+
+.range-control{
+    position: absolute;
+    top: 540px;
+    left: 135px;  
+}
+
+h4{
+    position: absolute;
+    top: 550px;
+    left: 430px;  
+}
+
+.value{
+    position: absolute;
+    top: 610px;
+    left: 135px;  
+
+}
