@@ -1,12 +1,13 @@
+//alert("Here")
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-var ContainerEl = document.querySelector("#repos-container");
-output.innerHTML = slider.value; // Display the default slider value
-alert("Okay Tokay")
+var airContainerEl = document.querySelector("#air-container");
+//output.innerHTML = slider.value; // Display the default slider value
+//alert("Okay Tokay")
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+//slider.oninput = function() {
+//  output.innerHTML = this.value;
+//}
 
 //document.getElementById("button1").addEventListener("click", function() {
 //    alert("Hello");
@@ -28,7 +29,7 @@ slider.oninput = function() {
     //alert("Error: " + response.statusText);
   //}
 //});
-
+airContainerEl.textContent="Okay Tokay"
 
 var getAirQuality  = function ()
 {
@@ -75,8 +76,10 @@ if (airdata.length === 0) {
   //repoSearchTerm.textContent = searchTerm;
   // loop over repos
 
-  var Data1 = "Air Data 1"
-  console.log(Data1.concat(Data1, airdata.data.city))
+  //var Data1 = "Air Data 1"
+  //console.log(Data1.concat(Data1, airdata.data.city))
+  airContainerEl.textContent=airdata.data.city
+  //alert(airdata.data.city)
   for (var i = 0; i < airdata.length; i++) {
     // format repo name
     //var airDataName = [i].owner.login + "/" + repos[i].name;
@@ -193,5 +196,3 @@ var getHikeData  = function ()
         //repoContainerEl.appendChild(repoEl);
       }
     };
-    
-
