@@ -59,6 +59,7 @@ h4 {
 h5 {
     color: white;
     margin-bottom: 0px;
+    font-weight: 900;
    } 
 
 h6 {
@@ -300,9 +301,13 @@ h4{
     top: 610px;
     left: 135px;  
 }
+
+
+
 #header-image-menu{ 
   top: 10px; 
   position: relative; 
+  padding-bottom: 100px;
 } 
 
 #header-image-menu img{ 
@@ -353,4 +358,12 @@ color: black;
     width: 100%;
 }
 
+#resultRow{
+  position: relative;
+  left:20%;
+}
+
+input, select, textarea{
+  color: #ffffff;
+}
 /* Text message container end*/

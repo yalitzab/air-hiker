@@ -19,7 +19,6 @@
           <h1 class="heading-1">
             Discover hiking trails near you
           </h1>
-<!-- Yalitza needs to motify the code "#text-message-container" -->
           <a href="#text-notify" class="waves-effect waves-light btn-large black border-radius: 30px;">Get Air Quality Notification</a>
         </div>
       </h2>
@@ -43,50 +42,58 @@
                   spellcheck="false" />
      
                   <button class="btn  lighten-2 waves-effect waves-light light blue" type="submit" name="action">Search</button>
-          <!-- Radio buttons by difficulty -->
-                  <h6>Difficulty</h6>
-            <form action="#" class="radioform">
-               <p>
-                <label>
-                  <input name="style2" type="radio" value="ffffff"/>
-                    <span>Easy</span>
-                </label>
-                </p>
-               <p>
-                 <label>
-                   <input name="style2" type="radio" checked/>
-                     <span>Moderate</span>
-                </label>
-               </p>
-              <p>
-              <label>
-               <input  name="style2" type="radio" />
-                <span>Hard</span>
-              </label>
-              </p>  
-              </form>  
             </form>  
 
   </header>
 
-  <!-- 2nd fold -->
+<!-- 2nd fold -->
 
   <div class="row" id="resultRow">
     <div class="row">
       <div class="column">
         <div class="col s6">
           <h5>Results</h5>
-            <div id="results" style="height:600px; width:960px;border:2px solid #5DC8F9;overflow:auto;">
-            <!-- <div><a href="#" class="button-result w-button">View More Results</a> </div></br> -->
+          <!-- radio button for sort -->
+<h6>Sory by difficulty: </h6>
+<form action="#" class="radioform">
+  <div class="row">
+    <div class="col s3">
+      <p>
+        <label>
+          <input name="style2" type="radio" value="ffffff"/>
+          <span style="color:white"> Easy</span>
+        </label>
+        </p>
+    </div>
+    <div class="col s4">
+      <p>
+        <label>
+          <input name="style2" type="radio" checked/>
+          <span style="color:white">Moderate</span>
+       </label>
+      </p>
+    </div>
+    <div class="col s4">
+      <p>
+        <label>
+         <input  name="style2" type="radio" />
+         <span style="color:white"> Hard</span>
+        </label>
+        </p>  
+    </div>
+  </form>  
+ 
+            <div id="results" style="height:600px; width:400px;border:2px solid #5DC8F9;overflow:auto;">
+
             </div>
         </div>
       </div>
        <!-- airquality widget -->
       <div class="column">
         <div class="col s6">
-          <h3>Air Quality</h3>
+          <h5>Air Quality</h5>
           <span id="air-container"> 
-          <div name="airvisual_widget" key="Fz3haKZXae33uJJMA"></div> 
+          <div name="airvisual_widget" key="sM3LfjdsH2Bj8dPCQ"></div> 
           </span>
         </div>
       </div>
