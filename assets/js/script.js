@@ -11,11 +11,11 @@ var lon = 0;
 // hidden the result
 document.querySelector("#resultRow").style.display = "none";
 
-var getAirQuality = function (searchLocation) {
-  console.log(searchLocation);
+var getAirQuality = function (inputEl) {
+  console.log(inputEl);
   var apiUrl =
     "http://api.airvisual.com/v2/city?city=" +
-    searchLocation +
+    inputEl +
     "&state=California&country=USA&key=9e6807b2-9614-47e1-b226-73369e760983";
   // make a request to the url
   fetch(apiUrl).then(function (response) {
@@ -31,13 +31,13 @@ var getAirQuality = function (searchLocation) {
         console.log(lat);
         console.log(lon);
         getHikeData();
+        success(position)
       });
     } else {
       alert("Error: " + response.statusText);
     }
   });
 };
-
 // getAirQuality();
 
 var displayAirData = function (airdata) {
@@ -59,6 +59,17 @@ var displayAirData = function (airdata) {
     // create a container for each repo
   }
 };
+
+function success(position) {
+  var lat = position.coords.latitude;
+  var lon = position.coords.longitude;
+  var queryURL = "http://api.airvisual.com/v2/nearest_city?lat" + lat + "&lon=" + lon + "&key=9e6807b2-9614-47e1-b226-73369e760983"
+  fetch(queryURL).then(function(response){
+      return response.json()
+  }).then(function (response) {
+      displayAirData();
+  });
+}
 
 var getHikeData = function () {
   console.log("Getting here");
@@ -164,4 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
   $('.parallax').parallax();
 });
+
+
       
