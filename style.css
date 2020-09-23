@@ -1,0 +1,328 @@
+body {
+  max-width: 1360;
+  font-family: Montserrat;
+  font-style: normal;
+  background: rgb(8,68,136);
+background: linear-gradient(174deg, rgba(8,68,136,1) 0%, rgba(55,123,163,1) 35%, rgba(106,161,170,1) 94%);
+}
+
+/* 500 trails */
+
+.trail-name {
+  color:white;
+}
+
+.trail-info {
+  color:white;
+}
+
+.city-name {
+  color:white;
+}
+
+/* Lands End Trail San Francisco, California */
+
+h1 {
+  color:white;
+  margin-bottom: 0px;
+
+  }
+
+h2 {
+color:white;
+margin-bottom: 0px;
+
+}
+
+h3 {
+  color:white;
+  margin-bottom: 0px;
+
+  }
+  
+h4 {
+  color: white;
+  margin-bottom: 0px;
+  }
+
+h5 {
+    color: white;
+    margin-bottom: 0px;
+   } 
+  
+
+.flow-text {
+  color:white;
+}
+
+/* moderate-btn1 */
+.button{
+  background-color: #008CBA;
+  float:left;
+}
+
+.button {
+  background-color: #4BAEE2;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.button-result {
+  position: auto;
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 10px;}
+
+/* IMG_5D26EE8144D0-1 1 */
+
+.landsend {
+position: auto;
+width: 960px;
+height: 310px;
+left: 0;
+top: 0;
+border-radius: 10px;
+}
+
+.column {
+  float: left;
+  width: auto;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.c-footer-contact__text {
+  max-width: 1360px;
+  margin: 0 0 87px;
+  font-size: 20px;
+  line-height: 1;
+  margin-left: 10px;
+  padding-right: 24px;
+  padding-top: 5px;
+  padding-bottom: 200px;
+  color: black;
+}
+
+.footer-signup__form {
+  max-width: 1360px;
+    color: #000;
+    margin-bottom: 100px;
+
+}
+
+.footer-signup__form-fields {
+  max-width: 1360px;
+  margin-bottom: 32px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-signup__phone {
+  position: relative;
+  width: calc(70% - 24px);
+  color:#000000;
+}
+
+.c-footer__content {
+  background: rgb(215,227,229);
+  position: auto;
+  margin-top: 10px;
+}
+
+.btn__arrow {
+  background:#5DC8F9;
+  border-radius: 30px;
+}
+
+.footer-signup__submit {
+  border-radius: 30px;
+  background:#5DC8F9;
+}
+
+/* ken css  */
+
+.button-container{
+  position:auto;
+  background-color: #D7E3E5;
+  height: 600px;
+  width: 567px;
+  padding: 50px;
+  margin: 20px;
+  border: 1px solid green;
+}
+
+.btn1
+{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    height: 75px;
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /*border: 2px solid black;*/
+}
+
+.btn2{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 280px;
+    height: 75px;
+    width: 150px;
+
+
+}
+
+.btn3{
+    background-color:#ffffff;
+    position: absolute;
+    top: 120px;
+    left: 430px;
+    height: 75px;
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.btn4{
+    position: absolute;
+    height: 75px;
+    width: 150px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 380px;
+    left: 130px;
+}
+
+.btn5
+
+{
+    background-color:#ffffff;
+    position: absolute;
+    top: 380px;
+    left: 280px;
+    height: 75px;
+    width: 150px;
+
+
+}
+
+.btn6{
+    background-color:#ffffff;
+    position: absolute;
+    top: 380px;
+    left: 430px;
+    height: 75px;
+    width: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.sort{
+    position: absolute;
+    top: 60px;
+    left: 130px;   
+}
+
+.difficulty{
+    position: absolute;
+    top: 320px;
+    left: 130px; 
+}
+
+h3{
+    font-size: 20px
+}
+
+.flex-container{
+    display: flex;
+}
+
+.slider{
+    position: absolute;
+    width: 450px;
+    top: 600px;
+    left: 130px;
+
+}
+
+.range-control{
+    position: absolute;
+    top: 540px;
+    left: 135px;  
+}
+
+h4{
+    position: absolute;
+    top: 550px;
+    left: 430px;  
+}
+
+.value{
+    position: absolute;
+    top: 610px;
+    left: 135px;  
+
+}
+
+/* alltrail */
+
+#page-home-index .container {
+  max-width: 1360px;
+}
+
+#page-home-index #marketing-features .search-form, #page-pro-welcome #marketing-features .search-form {
+  text-align: center;
+}
+
+#page-home-index .visual .search-form-block .search-form {
+  max-width: 712px;
+  text-align: left;
+}
+
+#page-home-index .visual .search-form-block .search-form {
+  max-width: 1360px;
+}
+
+#page-home-index .visual .search-form-block .search-form  {
+  max-width: 350px;
+  margin: 20 auto;
+}
+
+#page-home-index #marketing-features .search-form .inputs-holder-border, #page-pro-welcome #marketing-features .search-form .inputs-holder-border  
+{
+  z-index: -2;
+  position: absolute;
+  height: 97px;
+  width: 742px;
+  margin-top: -15px;
+  margin-left: -15px;
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 6px rgba(65,65,65,0.4);
+  box-shadow: 0 0 6px rgba(65,65,65,0.4);
+
+}
