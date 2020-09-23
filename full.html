@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+
+  <title>Air Hiker</title>
+</head>
+<body>
+  <header> 
+    <div id="header-image-menu"> 
+      <img src="assets/images/heroimage.png"> 
+      <h2 id = "image-text"> 
+        Air Hiker
+        <div class="banner__text">
+          <h1 class="heading-1">
+            Discover hiking trails near you
+          </h1>
+<!-- Yalitza needs to motify the code "#text-message-container" -->
+          <a href="#text-notify" class="waves-effect waves-light btn-large black border-radius: 30px;">Get Air Quality Notification</a>
+        </div>
+      </h2>
+      <div class="search-form-block"></div>
+
+        <div class="container">
+          <div class="search-form" action="#">
+            <div class="inputs-holder-border"></div>
+            <div class="inputs-holder">
+              <div data-react-class="AlgoliaSearchBox" data-react-props="{&quot;searchIconButton&quot;:false,&quot;homePage&quot;:true,&quot;defaultLatLng&quot;:[37.78,-122.465],&quot;currentUser&quot;:null,&quot;languageRegionCode&quot;:&quot;en-US&quot;}" data-hydrate="t" data-react-cache-id="AlgoliaSearchBox-0">
+                <form id="location-input" class="algolia-search styles-module__form___3hC1t undefined" data-test-id="algoliaTextBox" data-reactroot="">
+                  <input 
+                  id="input-value"
+                  type="text" 
+                  aria-label="Enter a city, park or trail name" 
+                  autocomplete="off" 
+                  autocorrect="off" 
+                  data-test-id="algoliaPlaceholderText" 
+                  class="styles-module__input___28bDf" 
+                  placeholder="Enter a city, park or trail name" 
+                  spellcheck="false" />
+     
+                  <button class="btn  lighten-2 waves-effect waves-light light blue" type="submit" name="action">Search</button>
+          <h6>Difficulty</h6>
+            <form action="#" class="radioform">
+               <p>
+                <label>
+                  <input name="style2" type="radio" value="ffffff"/>
+                    <span>Easy</span>
+                </label>
+                </p>
+               <p>
+                 <label>
+                   <input name="style2" type="radio" checked/>
+                     <span>Moderate</span>
+                </label>
+               </p>
+              <p>
+              <label>
+               <input  name="style2" type="radio" />
+                <span>Hard</span>
+              </label>
+              </p>  
+              </form>  
+            </form>  
+
+  </header>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- 2nd fold -->
+
+  <div class="row" id="resultRow">
+  <div class="row">
+    <div class="column">
+      <div class="col s6">
+        <h5>Results</h5>
+        
+        <div id="results" style="height:600px; width:960px;border:2px solid #5DC8F9;overflow:auto;">
+        
+
+            <!-- <div><a href="#" class="button-result w-button">View More Results</a> </div></br> -->
+        </div>
+      </div>
+  </div>
+</div>
+
+  <!-- airquality widget -->
+    <div class="column">
+      <div class="col s3">
+      <h3>Air Quality</h3>
+      <span id="air-container"> 
+        <div name="airvisual_widget" key="Fz3haKZXae33uJJMA"></div> 
+      </span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  <!-- 3rd fold -->
+  <!-- add yalitza's code here -->
+  <section class="text-message-container" id="text-notify">
+    <div class="row">
+        <div class="col s7"><span class="flow-text">
+            <p class="parabold">The first hiking app that's digitally-connected keeping 
+            you notified for air quality.</p>
+
+            <p class="text-phone">Text us to find out the air quality in real-time</p>
+
+            <div class="row">
+                <div class="col s3">
+                    <div class="input-field col s12">
+                        <select>
+                          <option value="" disabled selected>State</option>
+                          <option value="1">Select a State</option>
+                          <option value="1">Alaska</option>
+                          <option value="1">Arizona</option>
+                          <option value="1">Arkansas</option>
+                          <option value="1">California</option>
+                          <option value="1">Colorado</option>
+                          <option value="1">Connecticut</option>
+                          <option value="1">Delaware</option>
+                          <option value="1">District Of Columbia</option>
+                          <option value="1">Florida</option>
+                          <option value="1">Georgia</option>
+                          <option value="1">Hawaii</option>
+                          <option value="1">Idaho</option>
+                          <option value="1">Illinois</option>
+                          <option value="1">Indiana</option>
+                          <option value="1">Iowa</option>
+                          <option value="1">Kansas</option>
+                          <option value="1">Kentucky</option>
+                          <option value="1">Louisiana</option>
+                          <option value="1">Maine</option>
+                          <option value="1">Maryland</option>
+                          <option value="1">Massachusetts</option>
+                          <option value="1">Michigan</option>
+                          <option value="1">Minnesota</option>
+                          <option value="1">Mississippi</option>
+                          <option value="1">Missouri</option>
+                          <option value="1">Montana</option>
+                          <option value="1">Nebraska</option>
+                          <option value="1">Nevada</option>
+                          <option value="1">New Hampshire</option>
+                          <option value="1">New Jersey</option>
+                          <option value="1">New Mexico</option>
+                          <option value="1">New York</option>
+                          <option value="1">North Carolina</option>
+                          <option value="1">North Dakota</option>
+                          <option value="1">Ohio</option>
+                          <option value="1">Oklahoma</option>
+                          <option value="1">Oregon</option>
+                          <option value="1">Pennsylvania</option>
+                          <option value="1">Rhode Island</option>
+                          <option value="1">South Carolina</option>
+                          <option value="1">South Dakota</option>
+                          <option value="1">Tennessee</option>
+                          <option value="1">Texas</option>
+                          <option value="1">Utah</option>
+                          <option value="1">Vermont</option>
+                          <option value="1">Virginia</option>
+                          <option value="1">Washington</option>
+                          <option value="1">West Virginia</option>
+                          <option value="1">Wisconsin</option>
+                          <option value="1">Wyoming</option>
+                        </select>
+                      </div>
+                  </div>
+
+                <div class="input-field col s6">
+                    <input value="" id="mobileinput" type="text" class="validate">
+                    <label class="active" for="mobile">Mobile</label>
+                  </div>
+                <div class="row"> 
+                    <button class="send-btn waves-effect waves-light btn blue">Send</button>
+                </div>
+            </div>
+        </span>
+        </div>
+
+        <div class="col s5"><span class="flow-text phoneImg">
+            <img src="assets/images/iPhone.png">
+        </span></div>
+
+    </div>
+    <div>   
+    </div>
+</section>
+  
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Air Hiker</h5>
+          <p class="grey-text text-lighten-4">Join us! #AirHiker</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Project</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">About us</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Our team</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Get notified</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2020 Copyright AirHiker
+      </div>
+    </div>
+  </footer>
+
+    <!--Jquery, materialize, js file-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src=./assets/js/script.js></script>
+  <script type="text/javascript" src="https://www.airvisual.com/scripts/widget_v2.0.js"></script>
+</body>    
+</html>
+
