@@ -1,61 +1,31 @@
+$('select').formSelect();
+M.updateTextFields();
+// $ npm install @ringcentral/sdk --save
+
 // create array to hold mobile phone for saving to local storage
 var mobilePhone = []
 
 $(".send-btn").on("click", function(){
- 
-  var searchStates = $(".dropdown-content").val()
+  // var searchStates = $(".dropdown-content").val()
+
+
+
+var data = "{\"source\":\"Developer\",\"destination\":\"+6512345678\",\"text\":\"Hello World\"}";
+
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === this.DONE) {
+      console.log(this.responseText);
+    }
+  });
+
+xhr.open("POST", "https://api.wavecell.com/sms/v1/Yalitza_7rR96_hq/single");
+xhr.setRequestHeader("authorization", "NYsoqMb5B13OS9AEdzcIDGXV6z1qCQwfshUQg4M2Cg");
+xhr.setRequestHeader("content-type", "application/javascript");
+
+xhr.send(data);
+
   console.log()
-  airQ(searchStates)
-})
-
-
-
-
-function airQ(searchStates) {
-  fetch("http://api.airvisual.com/v2/states?q=" + searchStates + "country=USA&key=92595417-3c50-41fb-9446-57d4c55dc678")
-  .then(function(response){
-    return response.json();
-  })
-  .then (function() {
-    console.log(searchStates)
-
-  
-
-  })
-}
-
-$('select').formSelect();
-M.updateTextFields();
-   
-function smsText(){
-  fetch("	https://platform.devtest.ringcentral.com")
-}   
-
-// https://developers.ringcentral.com/my-account.html#/applications
-// Find your credentials at the above url, set them as environment variables, or enter them below
-
-// PATH PARAMETERS
-const accountId = '<ENTER VALUE>';
-const extensionId = '<ENTER VALUE>';
-
-// POST BODY
-const body = {
-    from: {
-        phoneNumber: '<ENTER VALUE>'
-    },
-    to: [
-        {
-            phoneNumber: '<ENTER VALUE>'
-        },
-    ],
-    text: '<ENTER VALUE>'
-};
-
-const SDK = require('ringcentral');
-const rcsdk = new SDK({server: process.env.serverURL, appKey: process.env.clientId, appSecret: process.env.clientSecret});
-const platform = rcsdk.platform();
-platform.login({ username: process.env.username, extension: process.env.extension, password: process.env.password }).then(() => {
-    platform.post(`/restapi/v1.0/account/${accountId}/extension/${extensionId}/sms`, body).then((r) => {
-        // PROCESS RESPONSE
-    });
-});
+})   
