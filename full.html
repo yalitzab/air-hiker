@@ -43,7 +43,8 @@
                   spellcheck="false" />
      
                   <button class="btn  lighten-2 waves-effect waves-light light blue" type="submit" name="action">Search</button>
-          <h6>Difficulty</h6>
+          <!-- Radio buttons by difficulty -->
+                  <h6>Difficulty</h6>
             <form action="#" class="radioform">
                <p>
                 <label>
@@ -67,45 +68,37 @@
             </form>  
 
   </header>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
 
   <!-- 2nd fold -->
 
   <div class="row" id="resultRow">
-  <div class="row">
-    <div class="column">
-      <div class="col s6">
-        <h5>Results</h5>
-        
-        <div id="results" style="height:600px; width:960px;border:2px solid #5DC8F9;overflow:auto;">
-        
-
+    <div class="row">
+      <div class="column">
+        <div class="col s6">
+          <h5>Results</h5>
+            <div id="results" style="height:600px; width:960px;border:2px solid #5DC8F9;overflow:auto;">
             <!-- <div><a href="#" class="button-result w-button">View More Results</a> </div></br> -->
+            </div>
         </div>
       </div>
-  </div>
-</div>
-
-  <!-- airquality widget -->
-    <div class="column">
-      <div class="col s3">
-      <h3>Air Quality</h3>
-      <span id="air-container"> 
-        <div name="airvisual_widget" key="Fz3haKZXae33uJJMA"></div> 
-      </span>
+       <!-- airquality widget -->
+      <div class="column">
+        <div class="col s6">
+          <h3>Air Quality</h3>
+          <span id="air-container"> 
+          <div name="airvisual_widget" key="Fz3haKZXae33uJJMA"></div> 
+          </span>
+        </div>
+      </div>
     </div>
-  </div>
+
 </div>
 </div>
 </div>
   <!-- 3rd fold -->
   <!-- add yalitza's code here -->
   <section class="text-message-container" id="text-notify">
-    <div class="row">
+    <div class="row ">
         <div class="col s7"><span class="flow-text">
             <p class="parabold">The first hiking app that's digitally-connected keeping 
             you notified for air quality.</p>
@@ -170,8 +163,8 @@
                           <option value="1">Wyoming</option>
                         </select>
                       </div>
-                  </div>
-
+                </div>
+                <!-- Input field mobile -->
                 <div class="input-field col s6">
                     <input value="" id="mobileinput" type="text" class="validate">
                     <label class="active" for="mobile">Mobile</label>
@@ -181,16 +174,12 @@
                 </div>
             </div>
         </span>
-        </div>
-
-        <div class="col s5"><span class="flow-text phoneImg">
-            <img src="assets/images/iPhone.png">
-        </span></div>
-
+      </div>
+                  <div class="col s5"><span class="flow-text phoneImg">
+                      <img src="assets/images/iPhone.png">
+                  </span></div>
     </div>
-    <div>   
-    </div>
-</section>
+  </section>
   
   <footer class="page-footer black">
     <div class="container">
@@ -220,8 +209,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-git.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src=./assets/js/script.js></script>
   <script type="text/javascript" src="https://www.airvisual.com/scripts/widget_v2.0.js"></script>
+  <script src=./assets/js/script.js></script>
+  <script src="./assets/js/text_container.js"></script>
 </body>    
 </html>
 
