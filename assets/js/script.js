@@ -1,43 +1,45 @@
-//alert("Here")
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
+
+//var slider = document.getElementById("myRange");
+//var output = document.getElementById("demo");
 var airContainerEl = document.querySelector("#air-container");
 var locationInputEl = document.querySelector("#location-input");
 var resultsBox = document.querySelector("#results");
 var inputEl = document.querySelector("#input-value");
+var radios = document.getElementsByName("style2");
 var lat = 0;
 var lon = 0;
-
-// hidden the result
+var difficulty = "";
+var requestedDifficulty=""
+// hide the result
 document.querySelector("#resultRow").style.display = "none";
 
-var getAirQuality = function (inputEl) {
-  console.log(inputEl);
+
+var getAirQuality = function (searchLocation) {
+
   var apiUrl =
     "http://api.airvisual.com/v2/city?city=" +
-    inputEl +
+    searchLocation +
     "&state=California&country=USA&key=9e6807b2-9614-47e1-b226-73369e760983";
   // make a request to the url
   fetch(apiUrl).then(function (response) {
-    console.log(response);
+  
     // request was successful
     if (response.ok) {
       response.json().then(function (data) {
         displayAirData(data);
-        console.log(data);
-        console.log("okay dokie");
+        //console.log(data);
         lon = data.data.location.coordinates[0];
         lat = data.data.location.coordinates[1];
-        console.log(lat);
-        console.log(lon);
+        //console.log(lat);
+        //console.log(lon);
         getHikeData();
-        success(position)
       });
     } else {
       alert("Error: " + response.statusText);
     }
   });
 };
+
 // getAirQuality();
 
 var displayAirData = function (airdata) {
@@ -45,34 +47,23 @@ var displayAirData = function (airdata) {
 
   if (airdata.length === 0) {
     //repoContainerEl.textContent = "No repositories found.";
-    alert("No repositories found");
+    alert("No trails found");
     return;
   }
 
   //var repoName = airdata[i].owner.login + "/" + repos[i].name;
-  console.log(airdata);
+  //console.log(airdata);
 
   for (var i = 0; i < airdata.length; i++) {
     // format repo name
     //var airDataName = [i].owner.login + "/" + repos[i].name;
-    console.log("Air data" + airdata[i]);
+    //console.log("Air data" + airdata[i]);
     // create a container for each repo
   }
 };
 
-function success(position) {
-  var lat = position.coords.latitude;
-  var lon = position.coords.longitude;
-  var queryURL = "http://api.airvisual.com/v2/nearest_city?lat" + lat + "&lon=" + lon + "&key=9e6807b2-9614-47e1-b226-73369e760983"
-  fetch(queryURL).then(function(response){
-      return response.json()
-  }).then(function (response) {
-      displayAirData();
-  });
-}
-
 var getHikeData = function () {
-  console.log("Getting here");
+  //console.log("Getting here");
   var apiUrl =
     "https://www.hikingproject.com/data/get-trails?lat=" +
     lat +
@@ -85,8 +76,8 @@ var getHikeData = function () {
     if (response.ok) {
       response.json().then(function (data) {
         displayHikeData(data);
-        console.log(data);
-        //console.log("okay dokie")
+       // console.log(data);
+       
       });
     } else {
       alert("Error: " + response.statusText);
@@ -96,6 +87,9 @@ var getHikeData = function () {
 // getHikeData();
 
 var displayHikeData = function (hikeData) {
+  
+  
+
   // check if api returned any repos
 
   if (hikeData.length === 0) {
@@ -103,17 +97,51 @@ var displayHikeData = function (hikeData) {
     alert("No repositories found");
     return;
   }
+  for (var i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+        // do whatever you want with the checked radio
+        //alert(radios[i].value);
+        requestedDifficulty=radios[i].value;
+        console.log("Requested Difficulty")
+        console.log(requestedDifficulty)
+        if(requestedDifficulty==="medium"){
+          difficulty="blueBlack"
+          //console.log("medium = blueblack")
+          //console.log(difficulty)
+        }else if(requestedDifficulty==="easy"){
+          difficulty="blue"
+        }
+        else{
+          difficulty="black"
+        }
+console.log(difficulty)
 
-  console.log(hikeData);
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+    //console.log("final")
+//console.log("difficulty")
+}
+
+//console.log(difficulty)
+  //console.log(hikeData);
 
   // loop over repos
   for (var i = 0; i < hikeData.trails.length; i++) {
     // display images
+    var trailDifficulty = hikeData.trails[i].difficulty;
+    
+    if (trailDifficulty===difficulty){
+      //console.log("equal")
+   
+    //console.log("Trail Difficulty")
+    console.log(trailDifficulty)
+    console.log(difficulty)
     var img = document.createElement("img");
     var imgSrc = hikeData.trails[i].imgSmallMed;
     // console.log(imgSrc + "SUP FOO");
     img.setAttribute("src", imgSrc);
-    img.setAttribute("alt", "Trail View");
+    img.setAttribute("alt", "Image not available");
 
     //display location
     var cityNameDiv = document.createElement("div");
@@ -151,17 +179,17 @@ var displayHikeData = function (hikeData) {
   // console.log(hikeData.trails[0].name);
   // create a span element to hold repository name
   var titleEl = document.createElement("span");
-  // titleEl.textContent = hikeData.trails[0].name;
-  console.log("Finally got here");
+   titleEl.textContent = hikeData.trails[0].name;
+  //console.log("Finally got here");
 
   // search results display
   document.querySelector("#resultRow").style.display = "";
 };
-
+}
 locationInputEl.addEventListener("submit", function (event) {
   event.preventDefault();
   resultsBox.innerHTML = "";
-  console.log("I submitted " + inputEl.value.trim());
+  //console.log("I submitted " + inputEl.value.trim());
   getAirQuality(inputEl.value.trim());
 });
 
@@ -175,6 +203,4 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
   $('.parallax').parallax();
 });
-
-
       

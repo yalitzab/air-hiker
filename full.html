@@ -43,59 +43,76 @@
                   spellcheck="false" />
      
                   <button class="btn  lighten-2 waves-effect waves-light light blue" type="submit" name="action">Search</button>
-          <!-- Radio buttons by difficulty -->
-                  <h6>Difficulty</h6>
-            <form action="#" class="radioform">
-               <p>
-                <label>
-                  <input name="style2" type="radio" value="ffffff"/>
-                    <span>Easy</span>
-                </label>
-                </p>
-               <p>
-                 <label>
-                   <input name="style2" type="radio" checked/>
-                     <span>Moderate</span>
-                </label>
-               </p>
-              <p>
+<!-- radio button for sort -->
+    <h6>Difficulty</h6>
+       <form action="#" class="radioform">
+        <div class="row">
+          <div class="col s3">
+            <p>
               <label>
-               <input  name="style2" type="radio" />
-                <span>Hard</span>
+                <input name="style2" type="radio" value="easy"/>
+                  <span style="color:white"> Easy</span>
               </label>
-              </p>  
+            </p>
+                </div>
+          <div class="col s4">
+            <p>
+              <label>
+                <input name="style2" type="radio" value="medium" checked/>
+                  <span style="color:white">Moderate</span>
+              </label>
+            </p>
+          </div>
+          <div class="col s4">
+            <p>
+              <label>
+                <input  name="style2" type="radio" value="hard" />
+                  <span style="color:white">Hard</span>
+              </label>
+            </p>  
+          </div>
               </form>  
-            </form>  
+           </form>  
 
   </header>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
   <!-- 2nd fold -->
 
   <div class="row" id="resultRow">
-    <div class="row">
-      <div class="column">
-        <div class="col s6">
-          <h5>Results</h5>
-            <div id="results" style="height:600px; width:960px;border:2px solid #5DC8F9;overflow:auto;">
-            <!-- <div><a href="#" class="button-result w-button">View More Results</a> </div></br> -->
-            </div>
+  <div class="row">
+    <div class="column">
+      <div class="col s6">
+        <h5>Results</h5>
+        
+        <div id="results" style="height:600px; width:400px;border:2px solid #5DC8F9;overflow:auto;">
+        
         </div>
       </div>
-       <!-- airquality widget -->
-      <div class="column">
-        <div class="col s6">
-          <h3>Air Quality</h3>
-          <span id="air-container"> 
-          <div name="airvisual_widget" key="Fz3haKZXae33uJJMA"></div> 
-          </span>
-        </div>
+  </div>
+
+
+  <!-- airquality widget -->
+    <div class="column">
+      <div class="col s6">
+      <h5>Air Quality</h5>
+      <span id="air-container"> 
+        <div name="airvisual_widget" key="sM3LfjdsH2Bj8dPCQ"></div> 
+      </span>
       </div>
     </div>
+  </div>
 
 </div>
 </div>
 </div>
   <!-- 3rd fold -->
+  <!-- add yalitza's code here -->
+    <!-- 3rd fold -->
   <!-- add yalitza's code here -->
   <section class="text-message-container" id="text-notify">
     <div class="row ">
