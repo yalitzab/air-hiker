@@ -98,28 +98,36 @@
      
                   <button class="btn  lighten-2 waves-effect waves-light light blue" type="submit" name="action">Search</button>
           <!-- Radio buttons by difficulty -->
-                  <h6>Difficulty</h6>
+                 <!-- radio button for sort -->
+            <h6>Difficulty</h6>
             <form action="#" class="radioform">
-               <p>
-                <label>
-                  <input name="style2" type="radio" value="ffffff"/>
-                    <span>Easy</span>
-                </label>
+            <div class="row">
+              <div class="col s3">
+                <p>
+                  <label>
+                    <input name="style2" type="radio" value="easy"/>
+                      <span style="color:white"> Easy</span>
+                  </label>
                 </p>
-               <p>
-                 <label>
-                   <input name="style2" type="radio" checked/>
-                     <span>Moderate</span>
-                </label>
-               </p>
-              <p>
-              <label>
-               <input  name="style2" type="radio" />
-                <span>Hard</span>
-              </label>
-              </p>  
-              </form>  
-            </form>  
+                    </div>
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input name="style2" type="radio" value="medium" checked/>
+                      <span style="color:white">Moderate</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s4">
+                <p>
+                  <label>
+                    <input  name="style2" type="radio" value="hard" />
+                      <span style="color:white">Hard</span>
+                  </label>
+                </p>
+              </div>
+                  </form>
+                </form>
 
   </header>
 
@@ -130,7 +138,7 @@
       <div class="column">
         <div class="col s6">
           <h5>Results</h5>
-            <div id="results" style="height:600px; width:960px;border:2px solid #5DC8F9;overflow:auto;">
+          <div id="results" style="height:600px; width:400px;border:2px solid #5DC8F9;overflow:auto;">
             <!-- <div><a href="#" class="button-result w-button">View More Results</a> </div></br> -->
             </div>
         </div>
@@ -138,7 +146,7 @@
        <!-- airquality widget -->
       <div class="column">
         <div class="col s6">
-          <h3>Air Quality</h3>
+          <h5>Air Quality</h5>
           <span id="air-container"> 
           <!-- <div name="airvisual_widget" key="Fz3haKZXae33uJJMA"></div>  -->
           <iframe id="aqi-widget" height="340" width="230" src="https://widget.airnow.gov/aq-dial-widget/?city=Raleigh&state=NC&country=USA" style="border: none; border-radius: 25px;"></iframe>
