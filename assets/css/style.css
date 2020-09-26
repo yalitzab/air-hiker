@@ -336,13 +336,18 @@ color: black;
 }  
 
 .container {
-  position: center; 
+  /* position: center;  */
   top: 100%; 
   text-align: center; 
 
 }
 
 /* Text message container start */
+/* #text-notify {
+  margin: 0;
+  width: 100%;
+} */
+
 .text-message-container {
     background-color:rgba(215, 227, 229, 1);
     
