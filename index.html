@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
 
   <title>Air Hiker</title>
 </head>
+
 <body>
   <!-- Header -->
-  <header> 
-    <div id="header-image-menu"> 
-      <img src="assets/images/heroimage.png"> 
-      <h2 id = "image-text"> 
-        Air Hiker
-        <div class="banner__text">
-          <h1 class="heading-1">
-            Discover hiking trails near you
-          </h1>
-          <a href="#text-notify" class="waves-effect waves-light btn-large black border-radius: 30px;">Get Air Quality Notification</a>
+  <header class="">
+
+    <div class="row">
+      <div class="col s12">
+        <div id="header-image-menu">
+          <div class="row">
+            <div class="col s12">
+              <img src="assets/images/heroimage.png" class="hero-image">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12">
+              <h2 id="image-text">
+                Air Hiker
+                <div class="banner__text">
+                  <h1 class="heading-1">
+                    Discover hiking trails near you
+                  </h1>
+                  <div class="row">
+                    <div class="col s12"> <a href="#text-notify"
+                        class="waves-effect waves-light btn-large black border-radius: 30px;">Get Air Quality
+                        Notification</a></div>
+
+                  </div>
+
+                </div>
+              </h2>
+
+            </div>
+          </div>
+
+
         </div>
-      </h2>
-      <div class="search-form-block"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="search-form-block"></div>
 
         <div class="container">
           <div class="search-form" action="#">
             <div class="inputs-holder-border"></div>
             <div class="inputs-holder">
-              <div data-react-class="AlgoliaSearchBox" data-react-props="{&quot;searchIconButton&quot;:false,&quot;homePage&quot;:true,&quot;defaultLatLng&quot;:[37.78,-122.465],&quot;currentUser&quot;:null,&quot;languageRegionCode&quot;:&quot;en-US&quot;}" data-hydrate="t" data-react-cache-id="AlgoliaSearchBox-0">
-                <form id="location-input" class="algolia-search styles-module__form___3hC1t undefined" data-test-id="algoliaTextBox" data-reactroot="">
+              <div data-react-class="AlgoliaSearchBox"
+                data-react-props="{&quot;searchIconButton&quot;:false,&quot;homePage&quot;:true,&quot;defaultLatLng&quot;:[37.78,-122.465],&quot;currentUser&quot;:null,&quot;languageRegionCode&quot;:&quot;en-US&quot;}"
+                data-hydrate="t" data-react-cache-id="AlgoliaSearchBox-0">
+                <form id="location-input" class="algolia-search styles-module__form___3hC1t undefined"
+                  data-test-id="algoliaTextBox" data-reactroot="">
                   <select id="state-select">
                     <option value="" disabled selected> Select a State</option>
                     <option value="0">Select a State</option>
@@ -85,49 +118,60 @@
                     <option value="Wisconsin WI">Wisconsin</option>
                     <option value="Wyoming WY">Wyoming</option>
                   </select>
-                  <input 
-                  id="input-value"
-                  type="text" 
-                  aria-label="Enter a city in the USA" 
-                  autocomplete="off" 
-                  autocorrect="off" 
-                  data-test-id="algoliaPlaceholderText" 
-                  class="styles-module__input___28bDf white" 
-                  placeholder="Enter a city in the USA" 
-                  spellcheck="false" />
-     
-                  <button class="btn  lighten-2 waves-effect waves-light light blue" type="submit" name="action">Search</button>
-          <!-- Radio buttons by difficulty -->
-                 <!-- radio button for sort -->
-            <h6>Difficulty</h6>
-            <form action="#" class="radioform">
-            <div class="row">
-              <div class="col s4">
-                <p>
-                  <label>
-                    <input name="style2" type="radio" value="easy"/>
-                      <span style="color:white"> Easy</span>
-                  </label>
-                </p>
-                    </div>
-              <div class="col s4">
-                <p>
-                  <label>
-                    <input name="style2" type="radio" value="medium" checked/>
-                      <span style="color:white">Moderate</span>
-                  </label>
-                </p>
-              </div>
-              <div class="col s4">
-                <p>
-                  <label>
-                    <input  name="style2" type="radio" value="hard" />
-                      <span style="color:white">Hard</span>
-                  </label>
-                </p>
-              </div>
+                  <input id="input-value" type="text" aria-label="Enter a city in the USA" autocomplete="off"
+                    autocorrect="off" data-test-id="algoliaPlaceholderText" class="styles-module__input___28bDf white"
+                    placeholder="Enter a city in the USA" spellcheck="false" />
+
+                  <button class="btn  lighten-2 waves-effect waves-light light blue" type="submit"
+                    name="action">Search</button>
+                  <!-- Radio buttons by difficulty -->
+                  <!-- radio button for sort -->
+                  <h6>Difficulty</h6>
+                  <form action="#" class="radioform">
+                    <div class="row">
+                      <div class="col s4">
+                        <p>
+                          <label>
+                            <input name="style2" type="radio" value="easy" />
+                            <span style="color:white"> Easy</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col s4">
+                        <p>
+                          <label>
+                            <input name="style2" type="radio" value="medium" checked />
+                            <span style="color:white">Moderate</span>
+                          </label>
+                        </p>
+                      </div>
+                      <div class="col s4">
+                        <p>
+                          <label>
+                            <input name="style2" type="radio" value="hard" />
+                            <span style="color:white">Hard</span>
+                          </label>
+                        </p>
+                      </div>
                   </form>
                 </form>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
 
   </header>
 
@@ -140,113 +184,122 @@
           <h5>Results</h5>
           <div id="results" style="height:600px; width:400px;border:2px solid #5DC8F9;overflow:auto;">
             <!-- <div><a href="#" class="button-result w-button">View More Results</a> </div></br> -->
-            </div>
+          </div>
         </div>
       </div>
-       <!-- airquality widget -->
+      <!-- airquality widget -->
       <div class="column">
         <div class="col s6">
           <h5>Air Quality</h5>
-          <span id="air-container"> 
-          <!-- <div name="airvisual_widget" key="Fz3haKZXae33uJJMA"></div>  -->
-          <iframe id="aqi-widget" height="340" width="230" src="https://widget.airnow.gov/aq-dial-widget/?city=Raleigh&state=NC&country=USA" style="border: none; border-radius: 25px;"></iframe>
+          <span id="air-container">
+            <!-- <div name="airvisual_widget" key="Fz3haKZXae33uJJMA"></div>  -->
+            <iframe id="aqi-widget" height="340" width="230"
+              src="https://widget.airnow.gov/aq-dial-widget/?city=Raleigh&state=NC&country=USA"
+              style="border: none; border-radius: 25px;"></iframe>
           </span>
         </div>
       </div>
     </div>
 
-</div>
-</div>
-</div>
+  </div>
+
   <!-- 3rd fold -->
   <!-- add yalitza's code here -->
-  <section class="text-message-container " id="text-notify">
-    <div class="row container" id="smsRow">
-        <div class="col s7"><span class="flow-text">
-            <p class="parabold">The first hiking app that's digitally-connected keeping 
-            you notified for air quality.</p>
 
-            <p class="text-phone">Text us to find out the air quality in real-time</p>
+  <div class="row text-message-container">
+    <div class="col s12">
+      <section class=" container" id="text-notify">
+        <div class="row " id="smsRow">
+          <div class="col s7"><span class="flow-text">
+              <p class="parabold">The first hiking app that's digitally-connected keeping
+                you notified for air quality.</p>
 
-            <div class="row">
+              <p class="text-phone">Text us to find out the air quality in real-time</p>
+
+              <div class="row">
                 <div class="col s3">
-                    <div class="input-field col s12">
-                        <select>
-                          <option value="" disabled selected>State</option>
-                          <option value="1">Select a State</option>
-                          <option value="1">Alaska</option>
-                          <option value="1">Arizona</option>
-                          <option value="1">Arkansas</option>
-                          <option value="1">California</option>
-                          <option value="1">Colorado</option>
-                          <option value="1">Connecticut</option>
-                          <option value="1">Delaware</option>
-                          <option value="1">District Of Columbia</option>
-                          <option value="1">Florida</option>
-                          <option value="1">Georgia</option>
-                          <option value="1">Hawaii</option>
-                          <option value="1">Idaho</option>
-                          <option value="1">Illinois</option>
-                          <option value="1">Indiana</option>
-                          <option value="1">Iowa</option>
-                          <option value="1">Kansas</option>
-                          <option value="1">Kentucky</option>
-                          <option value="1">Louisiana</option>
-                          <option value="1">Maine</option>
-                          <option value="1">Maryland</option>
-                          <option value="1">Massachusetts</option>
-                          <option value="1">Michigan</option>
-                          <option value="1">Minnesota</option>
-                          <option value="1">Mississippi</option>
-                          <option value="1">Missouri</option>
-                          <option value="1">Montana</option>
-                          <option value="1">Nebraska</option>
-                          <option value="1">Nevada</option>
-                          <option value="1">New Hampshire</option>
-                          <option value="1">New Jersey</option>
-                          <option value="1">New Mexico</option>
-                          <option value="1">New York</option>
-                          <option value="1">North Carolina</option>
-                          <option value="1">North Dakota</option>
-                          <option value="1">Ohio</option>
-                          <option value="1">Oklahoma</option>
-                          <option value="1">Oregon</option>
-                          <option value="1">Pennsylvania</option>
-                          <option value="1">Rhode Island</option>
-                          <option value="1">South Carolina</option>
-                          <option value="1">South Dakota</option>
-                          <option value="1">Tennessee</option>
-                          <option value="1">Texas</option>
-                          <option value="1">Utah</option>
-                          <option value="1">Vermont</option>
-                          <option value="1">Virginia</option>
-                          <option value="1">Washington</option>
-                          <option value="1">West Virginia</option>
-                          <option value="1">Wisconsin</option>
-                          <option value="1">Wyoming</option>
-                        </select>
-                      </div>
+                  <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>State</option>
+                      <option value="1">Select a State</option>
+                      <option value="1">Alaska</option>
+                      <option value="1">Arizona</option>
+                      <option value="1">Arkansas</option>
+                      <option value="1">California</option>
+                      <option value="1">Colorado</option>
+                      <option value="1">Connecticut</option>
+                      <option value="1">Delaware</option>
+                      <option value="1">District Of Columbia</option>
+                      <option value="1">Florida</option>
+                      <option value="1">Georgia</option>
+                      <option value="1">Hawaii</option>
+                      <option value="1">Idaho</option>
+                      <option value="1">Illinois</option>
+                      <option value="1">Indiana</option>
+                      <option value="1">Iowa</option>
+                      <option value="1">Kansas</option>
+                      <option value="1">Kentucky</option>
+                      <option value="1">Louisiana</option>
+                      <option value="1">Maine</option>
+                      <option value="1">Maryland</option>
+                      <option value="1">Massachusetts</option>
+                      <option value="1">Michigan</option>
+                      <option value="1">Minnesota</option>
+                      <option value="1">Mississippi</option>
+                      <option value="1">Missouri</option>
+                      <option value="1">Montana</option>
+                      <option value="1">Nebraska</option>
+                      <option value="1">Nevada</option>
+                      <option value="1">New Hampshire</option>
+                      <option value="1">New Jersey</option>
+                      <option value="1">New Mexico</option>
+                      <option value="1">New York</option>
+                      <option value="1">North Carolina</option>
+                      <option value="1">North Dakota</option>
+                      <option value="1">Ohio</option>
+                      <option value="1">Oklahoma</option>
+                      <option value="1">Oregon</option>
+                      <option value="1">Pennsylvania</option>
+                      <option value="1">Rhode Island</option>
+                      <option value="1">South Carolina</option>
+                      <option value="1">South Dakota</option>
+                      <option value="1">Tennessee</option>
+                      <option value="1">Texas</option>
+                      <option value="1">Utah</option>
+                      <option value="1">Vermont</option>
+                      <option value="1">Virginia</option>
+                      <option value="1">Washington</option>
+                      <option value="1">West Virginia</option>
+                      <option value="1">Wisconsin</option>
+                      <option value="1">Wyoming</option>
+                    </select>
+                  </div>
                 </div>
                 <!-- Input field mobile -->
                 <div class="input-field col s6">
-                    <input value="" id="mobileinput" type="text" class="validate">
-                    <label class="active" for="mobile">Mobile</label>
-                  </div>
-                <div class="row"> 
-                    <button class="send-btn waves-effect waves-light btn blue">Send</button>
+                  <input value="" id="mobileinput" type="text" class="validate">
+                  <label class="active" for="mobile">Mobile</label>
                 </div>
-            </div>
-        </span>
-      </div>
-                  <div class="col s5"><span class="flow-text-phoneImg flex-wrap:wrap">
-                      <img src="assets/images/iPhone.png">
-                  </span></div>
-    
+                <div class="row">
+                  <button class="send-btn waves-effect waves-light btn blue">Send</button>
                 </div>
+              </div>
+            </span>
+          </div>
+          <div class="col s5"><span class="flow-text-phoneImg flex-wrap:wrap">
+              <img src="assets/images/iPhone.png" class="phoneImg">
+            </span></div>
 
-  </section>
- 
-<!-- Footer section -->
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+
+
+
+  <!-- Footer section -->
   <footer class="page-footer black">
     <div class="container">
       <div class="row">
@@ -265,16 +318,17 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      © 2020 Copyright AirHiker
+        © 2020 Copyright AirHiker
       </div>
     </div>
   </footer>
 
-    <!--Jquery, materialize, js file-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-git.js"></script>
+  <!--Jquery, materialize, js file-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src=./assets/js/script.js></script>
   <script src="./assets/js/text_container.js"></script>
-</body>    
+</body>
+
 </html>
