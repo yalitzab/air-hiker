@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   max-width: 1360;
   font-family: Montserrat;
@@ -302,8 +308,6 @@ h4{
     left: 135px;  
 }
 
-
-
 #header-image-menu{ 
   top: 10px; 
   position: relative; 
@@ -367,3 +371,9 @@ input, select, textarea{
   color: #000000;
 }
 /* Text message container end*/
+
+
+@media screen and (max-width: 650px) {
+  
+}
+  
