@@ -19,7 +19,7 @@ document.querySelector("#resultRow").style.display = "none";
 var getAirQuality = function () {
   console.log(inputEl);
   var apiUrl =
-    "http://api.airvisual.com/v2/city?city=" +
+    "https://api.airvisual.com/v2/city?city=" +
     userCityInput +
     "&state=" +
     userStateInput +
@@ -72,7 +72,7 @@ function success(position) {
   var lon = position.coords.longitude;
 
   var queryURL =
-    "http://api.airvisual.com/v2/nearest_city?lat=" +
+    "https://api.airvisual.com/v2/nearest_city?lat=" +
     lat +
     "&lon=" +
     lon +
