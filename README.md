@@ -14,7 +14,9 @@ This hiking app allows the user to search for a hiking trail with the current ai
 
 ## Usage 
 
-![alt text](https://github.com/yalitzab/airhiker "Title Page")
+![alt text](https://github.com/yalitzab/air-hiker/blob/master/assets/images/HeaderScreenshot.PNG "Title Page")
+
+![alt text](https://github.com/yalitzab/air-hiker/blob/master/assets/images/ResultsScreenshot.PNG "Hiking Results")
 
 ## Credits
 
@@ -22,3 +24,7 @@ This hiking app allows the user to search for a hiking trail with the current ai
 * [Hector](https://github.com/patinoman)
 * [Ken](https://github.com/kmarchand55)
 * [Yalitza](https://github.com/yalitzab)
+
+## Deployed Link
+
+* https://yalitzab.github.io/air-hiker/
