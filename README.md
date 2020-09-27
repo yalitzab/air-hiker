@@ -14,8 +14,11 @@ This hiking app allows the user to search for a hiking trail with the current ai
 
 ## Usage 
 
+![alt text](https://github.com/yalitzab/airhiker "Title Page")
+
 ## Credits
 
 * [Shilu](https://github.com/zoushilu31) 
 * [Hector](https://github.com/patinoman)
 * [Ken](https://github.com/kmarchand55)
+* [Yalitza](https://github.com/yalitzab)
